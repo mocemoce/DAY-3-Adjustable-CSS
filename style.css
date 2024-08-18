@@ -1,0 +1,36 @@
+:root{
+    --base: #ff0000;
+    --spacing: 10px;
+    --blur: 10px;
+}
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter:blur(var(--blur));
+    height: 50%;
+    width: 50%;
+    object-fit: cover; /* Ensures the image scales nicely within its container */
+    border: 2px solid wheat;
+}
+span{
+    color: var(--base);
+}
+body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+    height: 100vh; /* Use viewport height to ensure full-screen height */
+    margin: 0; /* Remove default margin */
+    background: radial-gradient(circle, rgb(106, 118, 111), rgb(40, 39, 39));
+    color: aliceblue;
+}
+.controls{
+    margin-bottom: 50px;
+}
+h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    color: aliceblue;
+}
